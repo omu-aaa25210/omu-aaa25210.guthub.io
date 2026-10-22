@@ -12,16 +12,16 @@
             var seconds = now.getSeconds();
 
             if (hours < 10) hours = '0' + hours;
-            if (minutes < 10) hours = 'o' + minutes;
+            if (minutes < 10) minutes = '0' + minutes;
             if (seconds < 10) seconds = '0' + seconds;
 
             var timeString = hours + ':' + minutes + ':' + seconds;
             document.getElementById('clock').innerHTML = timeString;
         }
-    setInterva(updateClock, 1000);
+    setInterval(updateClock, 1000);
 
     window.onload = updateClock;c
-        </script>
+</script>
 </head>
 <body>
     <h1>現在時刻</h1>
